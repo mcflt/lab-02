@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student developer portfolio showcasing skills and projects.">
+    <title>Portfolio | Student</title>
+    <link rel="icon" href="images/DevTech.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="blob-bg"></div>
+
+    <nav>
+        <div class="logo">
+            <img src="images/DevTech.png" alt="Gio Logo" style="width: 30px; height: auto; vertical-align: middle;">
+            Gio's<span> Portfolio</span>
+        </div>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Work</a>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+        </div>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text-content">
+                <div class="status-indicator">
+                    <span class="dot"></span>
+                    For Hire.
+                </div>
+                <h1 class="hero-title">
+                    Building <span class="outline-text">Digital</span> <br>
+                    Solutions that <span class="gradient-text">Matter.</span>
+                </h1>
+                <p class="hero-description">
+                    I am a Student at STI specializing in intermediate web applications.
+                    Currently focused on bridging the gap between clean code and basic user experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-link">Let's Connect ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="photo-frame">
+                    <img src="images/myimg.jfif" alt="Professional Portrait" class="hero-img">
+                    <div class="experience-badge">
+                        <span class="count">3+</span>
+                        <span class="label">Years of <br>Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="skills" class="container">
+        <div class="section-header">
+            <h2>Technical Languages</h2>
+            <div class="line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">HTML5 & CSS3</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">UI/UX Design</div>
+            <div class="skill-tag">Git & GitHub</div>
+            <div class="skill-tag">Tailwind/CSS</div>
+            <div class="skill-tag">My SQL</div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <div class="section-header">
+            <span class="badge">Portfolio</span>
+            <h2>Selected Works</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="card-image-container">
+                    <img src="images/ebil.png" alt="E-Billing Work">
+                    <div class="card-overlay">
+                        <a href="https://ebill-history.netlify.app" class="demo-link">View Project</a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="card-tags"><span>HTML/CSS</span><span>JS</span></div>
+                    <h3>E-Bill Calculator</h3>
+                    <p>A full-stack solution featuring secure and accurate Billing.</p>
+                    <div class="card-links">
+                        <a href="https://ebill-history.netlify.app" class="btn-text">Live Demo ↗</a>
+                        <a href="#" class="btn-text secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-image-container">
+                    <img src="images/gwacal.png" alt="Data Analytics Project">
+                    <div class="card-overlay">
+                        <a href="https://gwa-cal.netlify.app/" class="demo-link">View Project</a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="card-tags"><span>HTML/CSS</span><span>JS</span></div>
+                    <h3>GWA Calculator</h3>
+                    <p>Standard GWA Calculator for students.</p>
+                    <div class="card-links">
+                        <a href="https://gwa-cal.netlify.app/" class="btn-text">Live Demo ↗</a>
+                        <a href="#" class="btn-text secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="contact-card">
+            <h2>What are your comments?</h2>
+            <form action="https://formspree.io/f/mvzrwjap" method="POST" id="contactForm">
+                <div class="input-group">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <textarea name="message" id="message" placeholder="Tell me about your project..." rows="4" required></textarea>
+
+                <button type="submit" id="submitBtn">Send Message</button>
+            </form>
+            <p id="feedback"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ✨ by a Student Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
